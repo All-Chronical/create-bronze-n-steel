@@ -1,6 +1,8 @@
 package net.AC.bronzeandsteel;
 
 import com.mojang.logging.LogUtils;
+import net.AC.bronzeandsteel.registry.CreativeModeTabs;
+import net.AC.bronzeandsteel.registry.ItemRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -22,22 +24,27 @@ public class BronzeAndSteel
 {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "bronzeandsteel";
+
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-
     public BronzeAndSteel()
     {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        // Registering eventbuses
+        CreativeModeTabs.register(eventBus);
+        ItemRegistry.register(eventBus);
+
 
         // Register the commonSetup method for modloading
-        modEventBus.addListener(this::commonSetup);
+        eventBus.addListener(this::commonSetup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
         // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
+        eventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

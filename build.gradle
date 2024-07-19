@@ -1,9 +1,22 @@
+buildscript {
+    repositories {
+        maven { url = 'https://files.minecraftforge.net/maven' }
+        maven { url = 'https://repo.spongepowered.org/maven' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+    }
+}
+
 plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'org.spongepowered.mixin'
 
 }
 
@@ -86,11 +99,14 @@ minecraft {
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
+            arg '-torg.spongepowered.asm.launch.MixinTweaker'
+
         }
 
         server {
             property 'forge.enabledGameTestNamespaces', mod_id
             args '--nogui'
+            arg '-torg.spongepowered.asm.launch.MixinTweaker'
         }
 
         // This run config launches GameTestServer and runs all registered gametests, then exits.
@@ -122,6 +138,9 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+
+    maven { url = 'https://repo.spongepowered.org/maven' }
+
     maven {
         name = 'tterrag maven'
         url = 'https://maven.tterrag.com/'
@@ -166,6 +185,13 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
+    // Mixin compatibility
+    embed('org.spongepowered:mixin:0.8.3-SNAPSHOT') {
+        exclude module: 'guava'
+        exclude module: 'commons-io'
+        exclude module: 'gson'
+    }
+
     // Create compatibility
     implementation fg.deobf("com.simibubi.create:create-${create_minecraft_version}:${create_version}:slim") { transitive = false }
     implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}")
@@ -173,12 +199,25 @@ dependencies {
 
     // JEI compatibility
     // compile against the JEI API but do not include it at runtime
-    implementation fg.deobf("curse.maven:jei-238222:5533463")
-    compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}"))
-    compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}"))
+    //implementation fg.deobf("curse.maven:jei-238222:5533463")
+    //compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}"))
+    //compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}"))
     // at runtime, use the full JEI jar for Forge
-    runtimeOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}"))
+    //runtimeOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}"))
 }
+
+sourceSets {
+    main {
+        refMap = mod_mixin_refmap.replace('${mod_id}', mod_id)
+    }
+}
+
+mixin {
+    config mod_mixin_configs.replace('${mod_id}', mod_id)
+}
+
+
+
 
 // This block of code expands all declared replace properties in the specified resource targets.
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.
