@@ -1,12 +1,16 @@
 buildscript {
     repositories {
-        maven { url = 'https://files.minecraftforge.net/maven' }
-        maven { url = 'https://repo.spongepowered.org/maven' }
+        // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
+        maven { url = 'https://maven.minecraftforge.net' }
+        maven {url 'https://cursemaven.com'}
         mavenCentral()
+        maven { url = 'https://maven.parchmentmc.org' }
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public' }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
-        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+        //classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: "${forgegradle_version}", changing: true
+        //classpath "org.parchmentmc:librarian:${librarian_version}"
+        //classpath "org.spongepowered:mixingradle:${mixingradle_version}"
     }
 }
 
@@ -16,9 +20,27 @@ plugins {
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
-    id 'org.spongepowered.mixin'
 
 }
+
+
+// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.parchmentmc.librarian.forgegradle'
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+//apply plugin: 'org.spongepowered.mixin'
+
+//mixin {
+//    add sourceSets.main, "bronzeandsteel.refmap.json"
+//    config "bronzeandsteel.mixins.json"
+//
+//    debug.export = true
+//}
+
+
+// Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 version = mod_version
 group = mod_group_id
@@ -139,6 +161,10 @@ repositories {
     //     dir 'libs'
     // }
 
+    maven {
+        url 'https://cursemaven.com'
+    }
+
     maven { url = 'https://repo.spongepowered.org/maven' }
 
     maven {
@@ -186,16 +212,17 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
     // Mixin compatibility
-    embed('org.spongepowered:mixin:0.8.3-SNAPSHOT') {
-        exclude module: 'guava'
-        exclude module: 'commons-io'
-        exclude module: 'gson'
-    }
+//    embed('org.spongepowered:mixin:0.8.3-SNAPSHOT') {
+//        exclude module: 'guava'
+//       exclude module: 'commons-io'
+//        exclude module: 'gson'
+//    }
 
     // Create compatibility
-    implementation fg.deobf("com.simibubi.create:create-${create_minecraft_version}:${create_version}:slim") { transitive = false }
-    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}")
-    implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
+    //implementation fg.deobf("curse.maven:create-4835191")
+    //implementation fg.deobf("com.simibubi.create:create-${create_minecraft_version}:${create_version}:slim") { transitive = false }
+    //implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}")
+    //implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 
     // JEI compatibility
     // compile against the JEI API but do not include it at runtime
@@ -206,15 +233,15 @@ dependencies {
     //runtimeOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}"))
 }
 
-sourceSets {
-    main {
-        refMap = mod_mixin_refmap.replace('${mod_id}', mod_id)
-    }
-}
+//sourceSets {
+//    main {
+//        refMap = mod_mixin_refmap.replace('${mod_id}', mod_id)
+//   }
+//}
 
-mixin {
-    config mod_mixin_configs.replace('${mod_id}', mod_id)
-}
+//mixin {
+//    config mod_mixin_configs.replace('${mod_id}', mod_id)
+//}
 
 
 

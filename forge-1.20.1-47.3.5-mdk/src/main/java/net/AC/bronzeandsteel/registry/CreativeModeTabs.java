@@ -19,7 +19,7 @@ public class CreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BronzeAndSteel.MOD_ID);
 
     // Registering BNS_CREATIVE_MENU
-    public static final RegistryObject<CreativeModeTab> BNS_CREATIVE_MENU = CREATIVE_MODE_TABS.register("Bronze and Steel",
+    public static final RegistryObject<CreativeModeTab> BNS_CREATIVE_MENU = CREATIVE_MODE_TABS.register("bns_creative_menu",
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ItemRegistry.STEEL_INGOT.get()))
 
@@ -30,7 +30,7 @@ public class CreativeModeTabs {
                     .displayItems(((itemDisplayParameters, output) ->
                     {
                         output.accept(ItemRegistry.STEEL_INGOT.get());
-                        output.accept(Items.IRON_INGOT);
+                        output.accept(ItemRegistry.STEEL_BLOCK__ITEM.get());
                     }))
 
                     .build());

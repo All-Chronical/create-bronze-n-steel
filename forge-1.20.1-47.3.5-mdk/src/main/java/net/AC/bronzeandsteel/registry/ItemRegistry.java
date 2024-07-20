@@ -1,6 +1,7 @@
 package net.AC.bronzeandsteel.registry;
 
 import net.AC.bronzeandsteel.BronzeAndSteel;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -32,6 +33,11 @@ public class ItemRegistry {
             ("raw_tin", () -> new Item(new Item.Properties()
                     ));
 */
+
+    // Registering Base Blocks
+    public static final RegistryObject<BlockItem> STEEL_BLOCK__ITEM = ITEMS.register
+            ("steel_block", () -> new BlockItem(BlockRegistry.STEEL_BLOCK.get(), new Item.Properties()
+            ));
 
 
 

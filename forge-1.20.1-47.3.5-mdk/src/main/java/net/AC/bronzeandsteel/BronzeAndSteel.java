@@ -1,6 +1,7 @@
 package net.AC.bronzeandsteel;
 
 import com.mojang.logging.LogUtils;
+import net.AC.bronzeandsteel.registry.BlockRegistry;
 import net.AC.bronzeandsteel.registry.CreativeModeTabs;
 import net.AC.bronzeandsteel.registry.ItemRegistry;
 import net.minecraft.client.Minecraft;
@@ -35,6 +36,7 @@ public class BronzeAndSteel
         // Registering eventbuses
         CreativeModeTabs.register(eventBus);
         ItemRegistry.register(eventBus);
+        BlockRegistry.register(eventBus);
 
 
         // Register the commonSetup method for modloading
