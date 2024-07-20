@@ -4,6 +4,7 @@ import net.AC.bronzeandsteel.BronzeAndSteel;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -23,7 +24,7 @@ public class BlockRegistry {
     public static final RegistryObject<Block> STEEL_BLOCK = BLOCKS.register
             ("steel_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .mapColor(MapColor.COLOR_GRAY)
-                    .explosionResistance(25f)
+                    .explosionResistance(10.0f)
                     ));
 
     // Eventbus handler
