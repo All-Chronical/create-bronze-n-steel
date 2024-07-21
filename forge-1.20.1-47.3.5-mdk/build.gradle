@@ -7,25 +7,10 @@ plugins {
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 
 }
-
-
-// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
-//apply plugin: 'org.spongepowered.mixin'
-
-//mixin {
-//    add sourceSets.main, "bronzeandsteel.refmap.json"
-//    config "bronzeandsteel.mixins.json"
-//
-//    debug.export = true
-//}
-
-
-// Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 version = mod_version
 group = mod_group_id
@@ -148,9 +133,14 @@ repositories {
     //     dir 'libs'
     // }
 
-    maven {
-        url "https://cursemaven.com"
-        content {
+    // Curse Maven
+    exclusiveContent {
+        forRepository {
+            maven {
+                url "https://cursemaven.com"
+            }
+        }
+        filter {
             includeGroup "curse.maven"
         }
     }
@@ -201,40 +191,10 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
-    // Mixin compatibility
-//    embed('org.spongepowered:mixin:0.8.3-SNAPSHOT') {
-//        exclude module: 'guava'
-//       exclude module: 'commons-io'
-//        exclude module: 'gson'
-//    }
-
 
     // Create compatibility
-    //implementation fg.deobf("curse.maven:create-4835191")
-    //implementation fg.deobf("com.simibubi.create:create-${create_minecraft_version}:${create_version}:slim") { transitive = false }
-    //implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}")
-    //implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
-
-    // JEI compatibility
-    // compile against the JEI API but do not include it at runtime
-    //implementation fg.deobf("curse.maven:jei-238222:5533463")
-    //compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}"))
-    //compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}"))
-    // at runtime, use the full JEI jar for Forge
-    //runtimeOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}"))
+    implementation fg.deobf("curse.maven:create-328085:4835191")
 }
-
-//sourceSets {
-//    main {
-//        refMap = mod_mixin_refmap.replace('${mod_id}', mod_id)
-//   }
-//}
-
-//mixin {
-//    config mod_mixin_configs.replace('${mod_id}', mod_id)
-//}
-
-
 
 
 // This block of code expands all declared replace properties in the specified resource targets.
