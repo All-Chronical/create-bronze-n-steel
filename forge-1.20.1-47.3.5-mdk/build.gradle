@@ -1,6 +1,6 @@
 
 plugins {
-    id 'eclipse'
+    //id 'eclipse'
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
@@ -9,7 +9,8 @@ plugins {
 }
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
-apply plugin: 'eclipse'
+//apply plugin: 'eclipse'
+apply plugin: 'idea'
 apply plugin: 'maven-publish'
 
 version = mod_version
@@ -95,6 +96,8 @@ minecraft {
             arg '-torg.spongepowered.asm.launch.MixinTweaker'
             jvmArg '-Xmx4096m'
 
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
         }
 
         server {
@@ -193,7 +196,10 @@ dependencies {
 
 
     // Create compatibility
-    implementation fg.deobf("curse.maven:create-328085:4835191")
+    //implementation fg.deobf("curse.maven:create-328085:4835191")
+    implementation fg.deobf("com.simibubi.create:create-${create_minecraft_version}:${create_version}:slim") { transitive = false }
+    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}")
+    implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 }
 
 
