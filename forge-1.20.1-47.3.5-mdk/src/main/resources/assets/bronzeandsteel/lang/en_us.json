@@ -3,6 +3,6 @@
 
   "item.bronzeandsteel.steel_ingot": "Steel Ingot",
 
-  "block.bronzeandsteel.steel_block" : "Block of Steel"
-
+  "block.bronzeandsteel.steel_block" : "Block of Steel",
+  "block.bronzeandsteel.tin_ore" : "Tin Ore"
 }

@@ -39,6 +39,10 @@ public class ItemRegistry {
             ("steel_block", () -> new BlockItem(BlockRegistry.STEEL_BLOCK.get(), new Item.Properties()
             ));
 
+    public static final RegistryObject<BlockItem> TIN_ORE__ITEM = ITEMS.register
+            ("tin_ore", ()-> new BlockItem(BlockRegistry.TIN_ORE.get(), new Item.Properties()
+            ));
+
 
 
 

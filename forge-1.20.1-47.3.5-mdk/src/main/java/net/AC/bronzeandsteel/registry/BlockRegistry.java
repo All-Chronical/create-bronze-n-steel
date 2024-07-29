@@ -27,6 +27,10 @@ public class BlockRegistry {
                     .explosionResistance(10.0f)
                     ));
 
+    public static final RegistryObject<Block> TIN_ORE = BLOCKS.register
+            ("steel_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)
+            ));
+
     // Eventbus handler
     public static void register(IEventBus bus){
         BLOCKS.register(bus);
