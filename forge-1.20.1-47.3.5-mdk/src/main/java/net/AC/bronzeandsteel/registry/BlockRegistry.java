@@ -4,6 +4,7 @@ import net.AC.bronzeandsteel.BronzeAndSteel;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -27,8 +28,8 @@ public class BlockRegistry {
                     .explosionResistance(10.0f)
                     ));
 
-    public static final RegistryObject<Block> TIN_ORE = BLOCKS.register
-            ("tin_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)
+    public static final RegistryObject<DropExperienceBlock> TIN_ORE = BLOCKS.register
+            ("tin_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE)
             ));
 
     // Eventbus handler
