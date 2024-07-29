@@ -28,7 +28,7 @@ public class BlockRegistry {
                     ));
 
     public static final RegistryObject<Block> TIN_ORE = BLOCKS.register
-            ("steel_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)
+            ("tin_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)
             ));
 
     // Eventbus handler
