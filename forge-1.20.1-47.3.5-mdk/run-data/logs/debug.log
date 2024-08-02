@@ -1,4 +1,4 @@
-[20Jul2024 15:59:05.292] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\ALL.Creator\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.5, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, bronzeandsteel, --all, --output, C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\src\generated\resources, --existing, C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\src\main\resources]
+[20Jul2024 15:59:05.292] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\ALL.Creator\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.5, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, bronzensteel, --all, --output, C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\src\generated\resources, --existing, C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\src\main\resources]
 [20Jul2024 15:59:05.295] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
 [20Jul2024 15:59:05.314] [main/DEBUG] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Found launch services [fmlclientdev,forgeclient,minecraft,forgegametestserverdev,fmlserveruserdev,fmlclient,fmldatauserdev,forgeserverdev,forgeserveruserdev,forgeclientdev,forgeclientuserdev,forgeserver,forgedatadev,fmlserver,fmlclientuserdev,fmlserverdev,forgedatauserdev,testharness,forgegametestserveruserdev]
 [20Jul2024 15:59:05.323] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Found naming services : [srgtomcp]
@@ -63,8 +63,8 @@
 [20Jul2024 15:59:05.469] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModListHandler/CORE]: Found mod coordinates from lists: []
 [20Jul2024 15:59:05.472] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Mod Locators : (mods folder:null),(maven libs:null),(exploded directory:null),(minecraft:null),(userdev classpath:null)
 [20Jul2024 15:59:05.472] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Dependency Locators : (JarInJar:null)
-[20Jul2024 15:59:05.476] [main/DEBUG] [net.minecraftforge.fml.loading.targets.CommonLaunchHandler/CORE]: Got mod coordinates bronzeandsteel%%C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\build\resources\main;bronzeandsteel%%C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\build\classes\java\main from env
-[20Jul2024 15:59:05.477] [main/DEBUG] [net.minecraftforge.fml.loading.targets.CommonLaunchHandler/CORE]: Found supplied mod coordinates [{bronzeandsteel=[C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\build\resources\main, C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\build\classes\java\main]}]
+[20Jul2024 15:59:05.476] [main/DEBUG] [net.minecraftforge.fml.loading.targets.CommonLaunchHandler/CORE]: Got mod coordinates bronzensteel%%C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\build\resources\main;bronzensteel%%C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\build\classes\java\main from env
+[20Jul2024 15:59:05.477] [main/DEBUG] [net.minecraftforge.fml.loading.targets.CommonLaunchHandler/CORE]: Found supplied mod coordinates [{bronzensteel=[C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\build\resources\main, C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\build\classes\java\main]}]
 [20Jul2024 15:59:05.945] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file forge-1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1.jar with {minecraft} mods - versions {1.20.1}
 [20Jul2024 15:59:06.093] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ALL.Creator\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.5\4c589c051ef533f8898fb5d83514d4186faa0eeb\javafmllanguage-1.20.1-47.3.5.jar
 [20Jul2024 15:59:06.093] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\ALL.Creator\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.5\4c589c051ef533f8898fb5d83514d4186faa0eeb\javafmllanguage-1.20.1-47.3.5.jar is missing mods.toml file
@@ -75,7 +75,7 @@
 [20Jul2024 15:59:06.186] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ALL.Creator\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.5\cc377ceca3274bd1e429c0da17f73720ce29a4d6\fmlcore-1.20.1-47.3.5.jar
 [20Jul2024 15:59:06.186] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\ALL.Creator\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.5\cc377ceca3274bd1e429c0da17f73720ce29a4d6\fmlcore-1.20.1-47.3.5.jar is missing mods.toml file
 [20Jul2024 15:59:06.192] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\build\resources\main
-[20Jul2024 15:59:06.199] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {bronzeandsteel} mods - versions {0.1-1.20.1}
+[20Jul2024 15:59:06.199] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {bronzensteel} mods - versions {0.1-1.20.1}
 [20Jul2024 15:59:06.202] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
 [20Jul2024 15:59:06.206] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {47.3.5}
 [20Jul2024 15:59:06.234] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from forge-1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1.jar, it does not contain dependency information.
@@ -89,7 +89,7 @@
 [20Jul2024 15:59:06.259] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file forge-1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1.jar with {minecraft} mods - versions {1.20.1}
 [20Jul2024 15:59:06.262] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\ALL.Creator\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1\forge-1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1.jar with languages [LanguageSpec[languageName=minecraft, acceptedVersions=1]]
 [20Jul2024 15:59:06.263] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\build\resources\main
-[20Jul2024 15:59:06.268] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {bronzeandsteel} mods - versions {0.1-1.20.1}
+[20Jul2024 15:59:06.268] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {bronzensteel} mods - versions {0.1-1.20.1}
 [20Jul2024 15:59:06.268] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\build\resources\main with languages [LanguageSpec[languageName=javafml, acceptedVersions=[47,)]]
 [20Jul2024 15:59:06.269] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
 [20Jul2024 15:59:06.270] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {47.3.5}
@@ -167,12 +167,12 @@
 [20Jul2024 15:59:07.334] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(minecraft)
 [20Jul2024 15:59:07.334] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(minecraft)
 [20Jul2024 15:59:07.334] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
-[20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(bronzeandsteel)
-[20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(bronzeandsteel)
-[20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(bronzeandsteel)
-[20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(bronzeandsteel)
-[20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(bronzeandsteel)
-[20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(bronzeandsteel)]
+[20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(bronzensteel)
+[20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(bronzensteel)
+[20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(bronzensteel)
+[20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(bronzensteel)
+[20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(bronzensteel)
+[20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(bronzensteel)]
 [20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(forge)
 [20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(forge)
 [20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(forge)
@@ -182,15 +182,15 @@
 [20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: inject() running with 4 agents
 [20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
 [20Jul2024 15:59:07.335] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
-[20Jul2024 15:59:07.336] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(bronzeandsteel)]
+[20Jul2024 15:59:07.336] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(bronzensteel)]
 [20Jul2024 15:59:07.336] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
-[20Jul2024 15:59:07.336] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\ALL.Creator\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, bronzeandsteel, --all, --output, C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\src\generated\resources, --existing, C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\src\main\resources]
+[20Jul2024 15:59:07.336] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\ALL.Creator\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, bronzensteel, --all, --output, C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\src\generated\resources, --existing, C:\Users\ALL.Creator\Downloads\Compressed\Bronze And Steel\forge-1.20.1-47.3.5-mdk\src\main\resources]
 [20Jul2024 15:59:07.635] [main/DEBUG] [mixin/]: Error cleaning class output directory: .mixin.out
 [20Jul2024 15:59:07.637] [main/DEBUG] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
 [20Jul2024 15:59:07.783] [main/DEBUG] [io.netty.util.internal.logging.InternalLoggerFactory/]: Using SLF4J as the default logging framework
 [20Jul2024 15:59:07.785] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.level: simple
 [20Jul2024 15:59:07.785] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.targetRecords: 4
-[20Jul2024 15:59:07.888] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [bronzeandsteel]
+[20Jul2024 15:59:07.888] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [bronzensteel]
 [20Jul2024 15:59:08.082] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/EntityType
 [20Jul2024 15:59:08.444] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/LiquidBlock
 [20Jul2024 15:59:08.475] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/StairBlock
@@ -246,7 +246,7 @@
 [20Jul2024 15:59:11.996] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Vanilla freeze snapshot created
 [20Jul2024 15:59:12.013] [main/DEBUG] [net.minecraftforge.fml.ModWorkManager/LOADING]: Using 16 threads for parallel mod-loading
 [20Jul2024 15:59:12.018] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@4667c4c1 - got cpw.mods.cl.ModuleClassLoader@5cbb84b1
-[20Jul2024 15:59:12.018] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.AC.bronzeandsteel.BronzeAndSteel
+[20Jul2024 15:59:12.018] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.AC.bronzensteel.bronzensteel
 [20Jul2024 15:59:12.022] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@4667c4c1 - got cpw.mods.cl.ModuleClassLoader@5cbb84b1
 [20Jul2024 15:59:12.022] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.minecraftforge.common.ForgeMod
 [20Jul2024 15:59:12.047] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Forge Version package package net.minecraftforge.versions.forge, Forge, version 47.3 from cpw.mods.modlauncher.TransformingClassLoader@4667c4c1
@@ -258,8 +258,8 @@
 [20Jul2024 15:59:12.048] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: Found MCP version information 20230612.114412
 [20Jul2024 15:59:12.048] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.5, for MC 1.20.1 with MCP 20230612.114412
 [20Jul2024 15:59:12.051] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.5 Initialized
-[20Jul2024 15:59:12.072] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for bronzeandsteel
-[20Jul2024 15:59:12.075] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.AC.bronzeandsteel.BronzeAndSteel$ClientModEvents to MOD
+[20Jul2024 15:59:12.072] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for bronzensteel
+[20Jul2024 15:59:12.075] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.AC.bronzensteel.bronzensteel$ClientModEvents to MOD
 [20Jul2024 15:59:12.115] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: -Dio.netty.noUnsafe: false
 [20Jul2024 15:59:12.115] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: Java version: 17
 [20Jul2024 15:59:12.116] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.theUnsafe: available
