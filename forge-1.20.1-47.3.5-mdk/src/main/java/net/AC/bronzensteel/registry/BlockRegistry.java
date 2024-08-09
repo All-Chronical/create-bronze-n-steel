@@ -1,6 +1,6 @@
-package net.AC.bronzensteel.registry;
+package net.ac.bronzensteel.registry;
 
-import net.AC.bronzensteel.bronzensteel;
+import net.ac.bronzensteel.bronzensteel;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;

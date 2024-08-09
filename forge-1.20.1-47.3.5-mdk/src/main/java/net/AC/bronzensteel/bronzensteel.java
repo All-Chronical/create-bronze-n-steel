@@ -1,9 +1,9 @@
-package net.AC.bronzensteel;
+package net.ac.bronzensteel;
 
 import com.mojang.logging.LogUtils;
-import net.AC.bronzensteel.registry.BlockRegistry;
-import net.AC.bronzensteel.registry.CreativeModeTabs;
-import net.AC.bronzensteel.registry.ItemRegistry;
+import net.ac.bronzensteel.registry.BlockRegistry;
+import net.ac.bronzensteel.registry.CreativeModeTabs;
+import net.ac.bronzensteel.registry.ItemRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;

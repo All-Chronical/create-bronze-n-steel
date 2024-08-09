@@ -1,6 +1,6 @@
-package net.AC.bronzensteel.registry;
+package net.ac.bronzensteel.registry;
 
-import net.AC.bronzensteel.bronzensteel;
+import net.ac.bronzensteel.bronzensteel;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
