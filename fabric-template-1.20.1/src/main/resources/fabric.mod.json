@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bronzensteel",
+	"version": "${version}",
+	"name": "Bronze N' Steel",
+	"description": "place\nholder",
+	"authors": [
+		"All.Chronical N' Mango_Mans"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bronzensteel/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ac.bronzensteel.BronzeNSteel"
+		],
+		"client": [
+			"net.ac.bronzensteel.BronzeNSteelClient"
+		],
+		"fabric-datagen": [
+			"net.ac.bronzensteel.BronzeNSteelDataGenerator"
+		]
+	},
+	"mixins": [
+		"bronzensteel.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
