@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "bronzensteel:steel_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "bronzensteel:steel_sheet"
+    }
+  ]
+}
