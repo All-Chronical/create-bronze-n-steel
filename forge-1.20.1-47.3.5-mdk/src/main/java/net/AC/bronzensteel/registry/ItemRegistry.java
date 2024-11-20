@@ -20,6 +20,11 @@ public class ItemRegistry {
             ("steel_ingot", () -> new Item(new Item.Properties()
                     ));
 
+    public static final RegistryObject<Item> STEEL_SHEET = ITEMS.register
+            ("steel_sheet", () -> new Item(new Item.Properties()
+            ));
+
+
 /*
     public static final RegistryObject<Item> TIN_INGOT = ITEMS.register
             ("tin_ingot", () -> new Item(new Item.Properties()

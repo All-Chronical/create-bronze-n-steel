@@ -2,6 +2,7 @@
   "creativetab.creative_menu" : "Bronze N' Steel",
 
   "item.bronzensteel.steel_ingot": "Steel Ingot",
+  "item.bronzensteel.steel_sheet": "Steel Sheet",
 
   "block.bronzensteel.steel_block" : "Block of Steel",
   "block.bronzensteel.tin_ore" : "Tin Ore"
