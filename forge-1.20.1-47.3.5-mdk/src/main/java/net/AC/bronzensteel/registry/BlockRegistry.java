@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraftforge.event.level.NoteBlockEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,10 +27,12 @@ public class BlockRegistry {
             ("steel_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .mapColor(MapColor.COLOR_GRAY)
                     .explosionResistance(10.0f)
+
                     ));
 
     public static final RegistryObject<DropExperienceBlock> TIN_ORE = BLOCKS.register
-            ("tin_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE)
+            ("tin_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
+                    
             ));
 
     // Eventbus handler
