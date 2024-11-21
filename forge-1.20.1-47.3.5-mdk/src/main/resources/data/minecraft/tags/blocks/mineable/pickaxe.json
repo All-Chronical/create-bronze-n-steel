@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bronzensteel:steel_block"
+    "bronzensteel:steel_block",
+    "bronzensteel:tin_ore"
   ]
 }
