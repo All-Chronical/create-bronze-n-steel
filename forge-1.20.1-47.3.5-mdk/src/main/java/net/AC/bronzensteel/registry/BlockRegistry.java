@@ -1,6 +1,7 @@
 package net.ac.bronzensteel.registry;
 
 import net.ac.bronzensteel.bronzensteel;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -31,8 +32,7 @@ public class BlockRegistry {
                     ));
 
     public static final RegistryObject<DropExperienceBlock> TIN_ORE = BLOCKS.register
-            ("tin_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
-                    
+            ("tin_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),UniformInt.of(1,3)
             ));
 
     // Eventbus handler
