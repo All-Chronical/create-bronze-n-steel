@@ -24,6 +24,10 @@ public class ItemRegistry {
             ("steel_sheet", () -> new Item(new Item.Properties()
             ));
 
+    public static final RegistryObject<Item> RAW_TIN = ITEMS.register
+            ("raw_tin", () -> new Item(new Item.Properties()
+            ));
+
 
 /*
     public static final RegistryObject<Item> TIN_INGOT = ITEMS.register

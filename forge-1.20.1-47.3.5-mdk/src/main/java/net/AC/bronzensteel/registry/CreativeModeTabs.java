@@ -31,7 +31,7 @@ public class CreativeModeTabs {
                         output.accept(ItemRegistry.STEEL_INGOT.get());
                         output.accept(ItemRegistry.STEEL_BLOCK__ITEM.get());
                         output.accept(ItemRegistry.STEEL_SHEET.get());
-
+                        output.accept(ItemRegistry.RAW_TIN.get());
                     }))
 
                     .build());
