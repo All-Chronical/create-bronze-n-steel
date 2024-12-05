@@ -57,6 +57,11 @@ public class ItemRegistry {
             ("cassiterite", ()-> new BlockItem(BlockRegistry.CASSITERITE.get(), new Item.Properties()
             ));
 
+    public static final RegistryObject<BlockItem> TIN_BLOCK__ITEM = ITEMS.register
+            ("tin_block", ()-> new BlockItem(BlockRegistry.TIN_BLOCK.get(), new Item.Properties()
+            ));
+
+
 
 
 

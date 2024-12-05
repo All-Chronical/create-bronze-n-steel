@@ -28,11 +28,15 @@ public class BlockRegistry {
             ("steel_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .mapColor(MapColor.COLOR_GRAY)
                     .explosionResistance(10.0f)
-
                     ));
 
     public static final RegistryObject<DropExperienceBlock> CASSITERITE = BLOCKS.register
             ("cassiterite", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),UniformInt.of(1,3)
+            ));
+
+    public static final RegistryObject<Block> TIN_BLOCK = BLOCKS.register
+            ("tin_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIORITE)
+                    .mapColor(MapColor.COLOR_LIGHT_BLUE)
             ));
 
     // Eventbus handler

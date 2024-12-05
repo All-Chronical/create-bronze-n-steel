@@ -28,11 +28,13 @@ public class CreativeModeTabs {
                     .displayItems(((itemDisplayParameters, output) ->
                     {
                         output.accept(ItemRegistry.CASSITERITE__ITEM.get());
-                        output.accept(ItemRegistry.STEEL_INGOT.get());
                         output.accept(ItemRegistry.STEEL_BLOCK__ITEM.get());
+                        output.accept(ItemRegistry.TIN_BLOCK__ITEM.get());
+                        output.accept(ItemRegistry.STEEL_INGOT.get());
                         output.accept(ItemRegistry.STEEL_SHEET.get());
                         output.accept(ItemRegistry.RAW_TIN.get());
                         output.accept(ItemRegistry.TIN_INGOT.get());
+
                     }))
 
                     .build());

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "item": "bronzensteel:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "bronzensteel:tin_block",
+    "count": 1
+  }
+}
