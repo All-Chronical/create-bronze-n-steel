@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all" : "bronzensteel:block/tin_ore"
+    "all" : "bronzensteel:block/cassiterite"
   }
 }

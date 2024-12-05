@@ -10,7 +10,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "bronzensteel:tin_ore",
+              "name": "bronzensteel:cassiterite",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -55,5 +55,5 @@
       ]
     }
   ],
-  "random_sequence": "bronzensteel:tin_ore"
+  "random_sequence": "bronzensteel:cassiterite"
 }

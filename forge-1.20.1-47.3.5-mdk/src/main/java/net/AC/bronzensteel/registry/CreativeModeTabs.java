@@ -27,7 +27,7 @@ public class CreativeModeTabs {
                     // Content
                     .displayItems(((itemDisplayParameters, output) ->
                     {
-                        output.accept(ItemRegistry.TIN_ORE__ITEM.get());
+                        output.accept(ItemRegistry.CASSITERITE__ITEM.get());
                         output.accept(ItemRegistry.STEEL_INGOT.get());
                         output.accept(ItemRegistry.STEEL_BLOCK__ITEM.get());
                         output.accept(ItemRegistry.STEEL_SHEET.get());

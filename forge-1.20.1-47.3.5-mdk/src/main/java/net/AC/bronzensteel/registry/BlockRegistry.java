@@ -31,8 +31,8 @@ public class BlockRegistry {
 
                     ));
 
-    public static final RegistryObject<DropExperienceBlock> TIN_ORE = BLOCKS.register
-            ("tin_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),UniformInt.of(1,3)
+    public static final RegistryObject<DropExperienceBlock> CASSITERITE = BLOCKS.register
+            ("cassiterite", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),UniformInt.of(1,3)
             ));
 
     // Eventbus handler
