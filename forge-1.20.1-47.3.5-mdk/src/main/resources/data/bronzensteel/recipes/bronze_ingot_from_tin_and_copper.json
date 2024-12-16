@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/copper"
+    },
+    {
+      "item": "bronzensteel:tin_ingot"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "item": "bronzensteel:bronze_ingot"
+    }
+  ]
+}
