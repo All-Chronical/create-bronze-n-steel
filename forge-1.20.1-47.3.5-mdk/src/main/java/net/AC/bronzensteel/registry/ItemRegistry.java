@@ -32,6 +32,10 @@ public class ItemRegistry {
             ("tin_ingot", () -> new Item(new Item.Properties()
             ));
 
+    public  static  final RegistryObject<Item> BRONZE_INGOT = ITEMS.register
+            ("bronze_ingot", () -> new Item(new Item.Properties()
+            ));
+
 
 
 /*

@@ -27,7 +27,7 @@ public class BlockRegistry {
     public static final RegistryObject<Block> STEEL_BLOCK = BLOCKS.register
             ("steel_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .mapColor(MapColor.COLOR_GRAY)
-                    .explosionResistance(10.0f)
+                    .explosionResistance(15.0f)
                     ));
 
     public static final RegistryObject<DropExperienceBlock> CASSITERITE = BLOCKS.register
